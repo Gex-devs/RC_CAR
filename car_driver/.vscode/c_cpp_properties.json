@@ -1,0 +1,62 @@
+//
+// !!! WARNING !!! AUTO-GENERATED FILE!
+// PLEASE DO NOT MODIFY IT AND USE "platformio.ini":
+// https://docs.platformio.org/page/projectconf/section_env_build.html#build-flags
+//
+{
+    "configurations": [
+        {
+            "name": "PlatformIO",
+            "includePath": [
+                "C:/Users/dgexi/OneDrive/Documents/Code/Arduino/RC_CAR_PROJECT/include",
+                "C:/Users/dgexi/OneDrive/Documents/Code/Arduino/RC_CAR_PROJECT/src",
+                "C:/Users/dgexi/OneDrive/Documents/Code/Arduino/RC_CAR_PROJECT/lib/driver",
+                "C:/Users/dgexi/OneDrive/Documents/Code/Arduino/RC_CAR_PROJECT/.pio/libdeps/nanoatmega328/RF24",
+                "C:/Users/dgexi/OneDrive/Documents/Code/Arduino/RC_CAR_PROJECT/.pio/libdeps/nanoatmega328/RF24/utility",
+                "C:/Users/dgexi/.platformio/packages/framework-arduino-avr/cores/arduino",
+                "C:/Users/dgexi/.platformio/packages/framework-arduino-avr/variants/eightanaloginputs",
+                "C:/Users/dgexi/.platformio/packages/framework-arduino-avr/libraries/SPI/src",
+                "C:/Users/dgexi/.platformio/packages/framework-arduino-avr/libraries/EEPROM/src",
+                "C:/Users/dgexi/.platformio/packages/framework-arduino-avr/libraries/HID/src",
+                "C:/Users/dgexi/.platformio/packages/framework-arduino-avr/libraries/SoftwareSerial/src",
+                "C:/Users/dgexi/.platformio/packages/framework-arduino-avr/libraries/Wire/src",
+                ""
+            ],
+            "browse": {
+                "limitSymbolsToIncludedHeaders": true,
+                "path": [
+                    "C:/Users/dgexi/OneDrive/Documents/Code/Arduino/RC_CAR_PROJECT/include",
+                    "C:/Users/dgexi/OneDrive/Documents/Code/Arduino/RC_CAR_PROJECT/src",
+                    "C:/Users/dgexi/OneDrive/Documents/Code/Arduino/RC_CAR_PROJECT/lib/driver",
+                    "C:/Users/dgexi/OneDrive/Documents/Code/Arduino/RC_CAR_PROJECT/.pio/libdeps/nanoatmega328/RF24",
+                    "C:/Users/dgexi/OneDrive/Documents/Code/Arduino/RC_CAR_PROJECT/.pio/libdeps/nanoatmega328/RF24/utility",
+                    "C:/Users/dgexi/.platformio/packages/framework-arduino-avr/cores/arduino",
+                    "C:/Users/dgexi/.platformio/packages/framework-arduino-avr/variants/eightanaloginputs",
+                    "C:/Users/dgexi/.platformio/packages/framework-arduino-avr/libraries/SPI/src",
+                    "C:/Users/dgexi/.platformio/packages/framework-arduino-avr/libraries/EEPROM/src",
+                    "C:/Users/dgexi/.platformio/packages/framework-arduino-avr/libraries/HID/src",
+                    "C:/Users/dgexi/.platformio/packages/framework-arduino-avr/libraries/SoftwareSerial/src",
+                    "C:/Users/dgexi/.platformio/packages/framework-arduino-avr/libraries/Wire/src",
+                    ""
+                ]
+            },
+            "defines": [
+                "PLATFORMIO=60106",
+                "ARDUINO_AVR_NANO",
+                "F_CPU=16000000L",
+                "ARDUINO_ARCH_AVR",
+                "ARDUINO=10808",
+                "__AVR_ATmega328P__",
+                ""
+            ],
+            "cStandard": "c11",
+            "cppStandard": "c++11",
+            "compilerPath": "C:/Users/dgexi/.platformio/packages/toolchain-atmelavr/bin/avr-gcc.exe",
+            "compilerArgs": [
+                "-mmcu=atmega328p",
+                ""
+            ]
+        }
+    ],
+    "version": 4
+}

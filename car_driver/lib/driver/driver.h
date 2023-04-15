@@ -5,12 +5,13 @@
 
 
 class Vroom{
+
   public:
-    int hallomyGst(int a, int b);
     void Left();
     void Right();
     void Forward();
     void BackWard();
+    
 };
 
 
