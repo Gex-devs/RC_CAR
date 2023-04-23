@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"name": "Controller",
+			"path": "../../Controller"
+		},
+		{
+			"name": "Playground",
+			"path": "../../../../../PlatformIO/Projects/Playground"
+		}
+	],
+	"settings": {}
+}
