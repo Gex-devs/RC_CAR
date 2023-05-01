@@ -10,6 +10,10 @@
 		{
 			"name": "Playground",
 			"path": "../../../../../PlatformIO/Projects/Playground"
+		},
+		{
+			"name": "nexi_display",
+			"path": "../../../../School/autohome/Proto/nexi_display"
 		}
 	],
 	"settings": {}

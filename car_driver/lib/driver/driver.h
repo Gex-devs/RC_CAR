@@ -5,13 +5,12 @@
 
 
 class Vroom{
-
   public:
     void Left();
     void Right();
     void Forward();
     void BackWard();
-    
+    void Stop();
 };
 
 
