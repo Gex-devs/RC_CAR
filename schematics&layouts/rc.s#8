@@ -5787,11 +5787,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="GND10" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="SUPPLY8" gate="G$1" pin="VCC_2"/>
 <pinref part="GND11" gate="1" pin="GND"/>
-<pinref part="S1" gate="G$1" pin="2"/>
-<wire x1="170.18" y1="48.26" x2="170.18" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="170.18" y1="35.56" x2="195.58" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="S1" gate="G$1" pin="3"/>
 </segment>
 </net>
