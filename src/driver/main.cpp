@@ -4,11 +4,22 @@
 #include <nRF24L01.h>
 #include <RF24.h>
 
+int motor2_A = PC3;
+int motor2_B = PC2;
+
+int motor4_A = PD3;
+int motor4_B = PD7;
+
+int motor3_A = PD4;
+int motor3_B = PD2;
+
 RF24 radio(10, 9);
 char data[6];
 Vroom yo = Vroom();
+
 void setup()
 {
+  pinMode(PD0, OUTPUT);
   delay(1000);
   Serial.begin(9600);
   Serial.println("Setup");
@@ -41,28 +52,3 @@ void loop()
   }
 }
 
-// int enb = 6;
-// int input1 = A5;
-// int input2 = A0;
-
-// Vroom yo = Vroom();
-
-// void setup(){
-//   Serial.begin(9600);
-//   pinMode(input1,OUTPUT);
-//   pinMode(enb,OUTPUT);
-//   pinMode(input1,OUTPUT);
-//   analogWrite(enb,255);
-//   digitalWrite(input1,HIGH);
-//   digitalWrite(input2,LOW);
-// }
-
-// void loop(){
-//  yo.Forward();
-//  delay(3000);
-//  yo.BackWard();
-//  delay(3000);
-//  yo.Left();
-//  delay(3000);
-//  yo.Right();
-// }
