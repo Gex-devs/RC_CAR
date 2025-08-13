@@ -4015,6 +4015,10 @@
 		(at 121.92 127)
 		(uuid "c7c9254b-2654-4016-976f-95774933e769")
 	)
+	(no_connect
+		(at 194.31 135.89)
+		(uuid "e48f2074-d6ad-4118-90e7-87bb425ea036")
+	)
 	(wire
 		(pts
 			(xy 41.91 81.28) (xy 48.26 81.28)
@@ -7893,7 +7897,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm_H4.3mm"
 			(at 36.83 76.2 0)
 			(effects
 				(font
