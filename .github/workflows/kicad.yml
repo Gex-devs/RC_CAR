@@ -3,7 +3,7 @@ name: kicad
 on:
   push:
     branches:
-      - "main"
+      - "master"
     paths:
       - WheelerPCB/**
 
