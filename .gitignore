@@ -62,4 +62,5 @@ ui_*.h
 .vagrant
 
 managed_components
+*.Lock
 *.lock
