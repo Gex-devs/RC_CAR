@@ -83,6 +83,11 @@ void dumpGamepad(ControllerPtr ctl) {
         ctl->accelY(),       // Accelerometer Y
         ctl->accelZ()        // Accelerometer Z
     );
+
+    // Little Extra for testing
+    analogWrite(18, ctl->throttle());
+
+    // digitalWrite(17, HIGH);
 }
 
 void dumpMouse(ControllerPtr ctl) {
@@ -266,8 +271,18 @@ void processControllers() {
     }
 }
 
+
+void pinSetup()
+{
+    // Function to setup the pin modes
+    pinMode(18, OUTPUT);
+}
+
+
 // Arduino setup function. Runs in CPU 1
 void setup() {
+
+    pinSetup();
     Console.printf("Firmware: %s\n", BP32.firmwareVersion());
     const uint8_t* addr = BP32.localBdAddress();
     Console.printf("BD Addr: %2X:%2X:%2X:%2X:%2X:%2X\n", addr[0], addr[1], addr[2], addr[3], addr[4], addr[5]);
@@ -301,6 +316,7 @@ void setup() {
     // By default, it is disabled.
     BP32.enableBLEService(false);
 }
+
 
 // Arduino loop function. Runs in CPU 1.
 void loop() {

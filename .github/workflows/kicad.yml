@@ -1,0 +1,39 @@
+name: kicad
+
+on:
+  push:
+    branches:
+      - "main"
+    paths:
+      - WheelerPCB/**
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+      packages: write
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: addRepo
+        run:  sudo add-apt-repository -y ppa:kicad/kicad-9.0-releases && sudo apt -y update
+      - uses: ConorMacBride/install-package@v1.1.0 
+        with:
+          apt: kicad poppler-utils
+      - name: exportPdf
+        run: kicad-cli sch export pdf -b --output ./WheelerPCB/Preview/temp.pdf WheelerPCB/Wheeler.kicad_sch 
+      - name: convertToPng
+        run: pdftoppm -png -r 300 ./WheelerPCB/Preview/temp.pdf ./WheelerPCB/Preview/Schematic 
+      - name: Commit schematic png
+        run: |
+          git config user.name "${{ github.actor}}"
+          git config user.email "${{github.actor}}@users.noreply.github.com"
+          git add ./audioVisualizer_PCB/Preview/Schematic-1.png
+          git diff --cached --quiet || git commit -m "Update schematic preview [skip ci]"
+          git push
+      - name: debug
+        run: ls -l ./audioVisualizer_PCB/Preview

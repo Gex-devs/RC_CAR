@@ -1,6 +1,16 @@
 # RC_CAR
 
-RC CAR using NRF240L and L293D driver chips
+ESP32 based RC Car using Xbox One Controller
 
-![](layouts.png)
-![](preview.jpg)
+![Image](WheelerPCB/Preview/PCB.png)
+
+![Document](WheelerPCB/Preview/Schematic-1.png)
+
+## Components
+
+
+
+## Software 
+
+
+## Tools
