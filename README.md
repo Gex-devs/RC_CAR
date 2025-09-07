@@ -6,6 +6,7 @@ ESP32 based RC Car using Xbox One Controller
 
 ![Document](WheelerPCB/Preview/Schematic-1.png)
 
+![Image](preview.jpg)
 ## Components
 
 
