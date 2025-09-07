@@ -5282,7 +5282,7 @@
 			)
 		)
 		(property "Value" "ESP32-WROOM-32E"
-			(at 52.324 112.522 0)
+			(at 51.054 116.586 0)
 			(effects
 				(font
 					(size 1.27 1.27)
